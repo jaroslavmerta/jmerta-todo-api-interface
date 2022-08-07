@@ -4,8 +4,7 @@ interface Task {
   finished: string;
 }
 
-interface GetTaskResponse {
+export interface GetTaskResponse {
   data: Task[];
 }
-
-export { GetTaskResponse };
+ 
