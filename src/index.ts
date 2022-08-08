@@ -7,4 +7,3 @@ interface Task {
 export interface GetTaskResponse {
   data: Task[];
 }
- 
