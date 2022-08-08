@@ -8,25 +8,28 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "eslint -c .eslintrc.js --ext .ts src",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run format",
+    "preversion": "npm run format",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jaroslavmerta/jmerta-todo-api-interface"
   },
-  "keywords": ["Todo", "todo list", "todo merta", "todo merta interface"],
+  "keywords": [
+    "Todo",
+    "todo list",
+    "todo merta",
+    "todo merta interface"
+  ],
   "author": "JMerta",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^28.1.6",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
     "@typescript-eslint/parser": "^5.32.0",
-    "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsdoc": "^39.3.4",
     "eslint-plugin-prefer-arrow": "^1.2.3",
