@@ -5,5 +5,6 @@ interface Task {
 }
 
 export interface GetTaskResponse {
+  message:string;
   data: Task[];
 }
