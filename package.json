@@ -1,13 +1,13 @@
 {
   "name": "jmerta-todo-api-interface",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "API interface for ToDo-Merta application",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "format": "prettier --write src/**/*.{ts}",
+    "format": "prettier --write src/**/*.ts",
     "prepare": "npm run build",
     "prepublishOnly": "npm test",
     "version": "npm run format && git add -A src",
