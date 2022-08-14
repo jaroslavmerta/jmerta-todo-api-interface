@@ -5,12 +5,12 @@ export interface Task {
 }
 
 interface dbRes<T> {
-  dbStatus: number,
-  dbMessage: string,
-  data: T
+  dbStatus: number;
+  dbMessage: string;
+  data: T;
 }
 
 export interface GetTaskResponse {
   message: string;
-  data: Task[] | dbRes<Task[] >;
+  data: Task[] | dbRes<Task[]>;
 }
