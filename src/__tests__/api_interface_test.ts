@@ -1,4 +1,4 @@
-import { GetTaskResponse } from '../index';
+import { GetTasksResponse } from '../index';
 
 test('Todo API interface GetTaskResponse', () => {
   const smr = {
@@ -11,7 +11,7 @@ test('Todo API interface GetTaskResponse', () => {
       },
     ],
   };
-  const prd: GetTaskResponse = {
+  const prd: GetTasksResponse = {
     message: 'zpráva o stavu',
     data: [
       {

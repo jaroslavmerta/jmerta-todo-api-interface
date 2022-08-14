@@ -4,13 +4,12 @@ export interface Task {
   finished: string;
 }
 
-interface dbRes<T> {
-  dbStatus: number;
-  dbMessage: string;
-  data: T;
+export interface GetTasksResponse {
+  message: string;
+  data: Task[];
 }
 
 export interface GetTaskResponse {
   message: string;
-  data: Task[] | dbRes<Task[]>;
+  data: Task;
 }
