@@ -1,6 +1,6 @@
 {
   "name": "jmerta-todo-api-interface",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "API interface for ToDo-Merta application",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
