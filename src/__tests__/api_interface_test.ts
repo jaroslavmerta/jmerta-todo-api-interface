@@ -1,4 +1,4 @@
-import { GetTasksResponse } from '../index';
+import { GetTasksResIF } from '../index';
 
 test('Todo API interface GetTaskResponse', () => {
   const smr = {
@@ -7,17 +7,17 @@ test('Todo API interface GetTaskResponse', () => {
       {
         id: '5555',
         content: 'sqwtrdfdfing',
-        finished: 'sfdtrdfindfdfg',
+        finished: 5555,
       },
     ],
   };
-  const prd: GetTasksResponse = {
+  const prd: GetTasksResIF = {
     message: 'zpráva o stavu',
     data: [
       {
         id: '5555',
         content: 'sqwtrdfdfing',
-        finished: 'sfdtrdfindfdfg',
+        finished: 5555,
       },
     ],
   };

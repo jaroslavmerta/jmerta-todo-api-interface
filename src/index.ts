@@ -1,15 +1,13 @@
-export interface Task {
+export interface TaskIF {
   id?: string;
   content: string;
-  finished: string;
+  finished: number;
 }
-
-export interface GetTasksResponse {
+export interface GetTasksResIF {
   message: string;
-  data: Task[];
+  data: TaskIF[];
 }
-
-export interface GetTaskResponse {
+export interface GetTaskResIF {
   message: string;
-  data: Task;
+  data: TaskIF;
 }
