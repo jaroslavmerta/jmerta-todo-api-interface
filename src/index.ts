@@ -9,5 +9,5 @@ export interface GetTasksResIF {
 }
 export interface GetTaskResIF {
   message: string;
-  data: TaskIF;
+  data: TaskIF | null;
 }
